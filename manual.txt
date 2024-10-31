@@ -1,0 +1,14 @@
+Run backend server
+1.navigate to Tumor detection Web app>backend 
+	i.open cmd 
+ 	ii. python App.py
+To Check server is running or not
+2.Open another cmd (don't close the previous)
+	i. curl.exe -X POST http://127.0.0.1:5000/predict -F "file=@C:\\Users\\Pavilion\\OneDrive	\\Pictures\\test_image2.jpg"
+	ii.replace your image path instead of C:\\Users\\Pavilion\\OneDrive\\Pictures	\\test_image2.jpg
+Run frontend server
+3.navigate to Tumor detection Web app>frontend>src
+	i.open cmd
+	ii.npm start
+
+curl.exe -X POST http://127.0.0.1:5000/predict -F "file=@C:\Users\Pavilion\OneDrive\Desktop\Tumor Detection Web App\MRI-Brain-Images-abenign-bmalignant-images.png

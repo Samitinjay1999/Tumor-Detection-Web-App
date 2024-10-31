@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #7a81dd; /* Background color */
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Navigation background color */
+  padding: 10px 20px;
+}
+
+.nav__logo {
+  color: white;
+  font-size: 24px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.nav__links.inactive {
+  max-height: 0; /* Collapsed */
+}
+
+.nav__links.active {
+  max-height: 300px; /* Adjust as needed for your menu */
+}
+
+.nav__links .link a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.hamburger {
+  cursor: pointer;
+  margin-right: 20px; /* Space between hamburger and logo */
+}
+
+.hamburger .line {
+  background: white;
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+.header {
+  display: flex; /* Use flexbox for header layout */
+  justify-content: space-between; /* Align items to the left and right */
+  padding: 20px;
+  align-items: center; /* Center items vertically */
+}
+
+.header .content {
+  flex: 1; /* Allow content to take available space */
+  margin-right: 20px; /* Space between text and image */
+}
+
+.header .image {
+  flex: 1; /* Allow image to take available space */
+  text-align: right; /* Align image to the right */
+}
+
+.header .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header .btn {
+  background-color: #007BFF; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.header .btn:hover {
+  background-color: #0056b3; /* Button hover color */
+}

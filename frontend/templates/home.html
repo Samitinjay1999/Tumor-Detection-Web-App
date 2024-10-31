@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../statics/home/style.css">
+    <title>Brain Tumor Detection</title>
+</head>
+<body>
+    <div class="container1">
+        <nav class="nav">
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="nav__logo">Brain Tumor Detection</div>
+            <ul class="nav__links" id="nav-links" class="inactive">
+                <li class="link"><a href="#" onclick="navigateToHome()">Home</a></li>
+                <li class="link"><a href="predict.html">Predict</a></li>
+                <li class="link"><a href="aboutus.html">About Us</a></li>
+                <li class="link"><a href="contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="content">
+                <h1>Brain Tumor Detection</h1>
+                <p>
+                    Welcome to our web application dedicated to brain tumor detection using cutting-edge deep learning models.
+                    Explore how our technology leverages advanced algorithms to accurately detect and analyze brain tumors
+                    from medical imaging data. Join us in revolutionizing healthcare with AI-driven solutions.
+                </p>
+                <button class="btn" onclick="navigateToPrediction()">Prediction</button>
+            </div>
+            <div class="image">
+                <img src="../statics/home/pngegg.png" alt="Brain" />
+            </div>
+        </header>
+    </div>
+    <script src="../statics/home/script.js"></script>
+</body>
+</html>
