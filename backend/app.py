@@ -4,13 +4,18 @@ import numpy as np
 from PIL import Image, ImageOps
 import tensorflow as tf
 import cv2
+import os
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the trained model
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Define the relative path to the model
+model_path = os.path.join(current_dir, 'models', 'bestModel.h5')
 # model_path = "./bestModel.h5"  # Ensure this path is correct
-model = tf.keras.models.load_model("C:/Users/Pavilion/OneDrive/Desktop/Tumor Detection Web App/backend/models/bestModel.h5")
+model = tf.keras.models.load_model(model_path)
 
 # Function to preprocess images
 def preprocess_image(image):
