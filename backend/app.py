@@ -11,7 +11,6 @@ CORS(app)  # Enable CORS for all routes
 
 # Load the trained model
 current_dir = os.path.dirname(os.path.abspath(__file__))
-
 # Define the relative path to the model
 model_path = os.path.join(current_dir, 'models', 'bestModel.h5')
 # model_path = "./bestModel.h5"  # Ensure this path is correct
@@ -82,7 +81,7 @@ def predict():
         prediction = model.predict(image)[0][0]
         predicted_class = "Healthy" if prediction < 0.5 else "Tumor"
 
-        return jsonify({'prediction': predicted_class, 'confidence': float(prediction)})
+        return jsonify({'Type': predicted_class, 'Prediction': float(prediction)})
 
     except Exception as e:
         return jsonify({'error': str(e)})
